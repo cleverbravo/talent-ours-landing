@@ -38,14 +38,14 @@ export default function FeaturesGridSection() {
       sx={{
         backgroundColor: "primary.main",
         color: "white",
-        py: 3,
+        py: 7,
       }}
     >
-      <Container maxWidth="lg">
+      <Container maxWidth={false}>
         <Box
           sx={{
             display: "grid",
-            gridTemplateColumns: { md: "1fr 1fr" },
+            gridTemplateColumns: { md: "1.5fr 1fr" },
             alignItems: "center",
           }}
         >
@@ -53,7 +53,7 @@ export default function FeaturesGridSection() {
             sx={{
               display: "grid",
               gridTemplateColumns: "repeat(5, 1fr)",
-              gap: { xs: 3, md: 4 },
+              gap: { xs: 5, md: 4 },
             }}
           >
             {features.map((feat) => (

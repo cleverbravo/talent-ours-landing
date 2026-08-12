@@ -58,7 +58,7 @@ export default function HeroSection() {
     <Box
       sx={{
         background: "linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%)",
-        minHeight: 500,
+        minHeight: 800,
         display: "flex",
         alignItems: "center",
         position: "relative",
@@ -92,7 +92,7 @@ export default function HeroSection() {
             sx={{
               color: "white",
               lineHeight: 1.15,
-              fontWeight: 800,
+              fontWeight: 700,
               mb: 4,
               fontSize: { xs: "2.5rem", md: "3.5rem" },
             }}

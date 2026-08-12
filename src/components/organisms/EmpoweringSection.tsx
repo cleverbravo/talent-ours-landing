@@ -5,11 +5,11 @@ import StatItem from "@/components/molecules/StatItem";
 import Image from "next/image";
 
 const values = [
-  { icon: <Image src="/icons/save-time.svg" alt="save time" width={90} height={90} />, label: "Save Time" },
-  { icon: <Image src="/icons/productivity.svg" alt="save time" width={90} height={90} />, label: "Increase\nProductivity" },
-  { icon: <Image src="/icons/cost.svg" alt="save time" width={90} height={90} />, label: "Reduce\nCosts" },
-  { icon: <Image src="/icons/flexible.svg" alt="save time" width={90} height={90} />, label: "Flexible\nSupport" },
-  { icon: <Image src="/icons/multi-task.svg" alt="save time" width={90} height={90} />, label: "Multi Task" },
+  { icon: <Image src="/icons/save-time.svg" alt="save time" width={90} height={90} />, label: "Save Time", label2: ""},
+  { icon: <Image src="/icons/productivity.svg" alt="save time" width={90} height={90} />, label: "Increase", label2: "Productivity" },
+  { icon: <Image src="/icons/cost.svg" alt="save time" width={90} height={90} />, label: "Reduce", label2: "Costs" },
+  { icon: <Image src="/icons/flexible.svg" alt="save time" width={90} height={90} />, label: "Flexible", label2: "Support" },
+  { icon: <Image src="/icons/multi-task.svg" alt="save time" width={90} height={90} />, label: "Multi Task", label2: "" },
 ];
 
 export default function EmpoweringSection() {
@@ -44,7 +44,7 @@ export default function EmpoweringSection() {
           }}
         >
           {values.map((val) => (
-            <StatItem key={val.label} icon={val.icon} label={val.label} />
+            <StatItem key={val.label} icon={val.icon} label={val.label} label2={val.label2} />
           ))}
         </Box>
       </Container>

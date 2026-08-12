@@ -19,7 +19,13 @@ export default function FeatureIcon({ icon, label }: FeatureIconProps) {
       }}
     >
         {icon}
-        <Typography sx={{ color: "white", mt: 1 }}>{label}</Typography>
+        <Typography variant="body1" sx={{ 
+          color: "white", 
+          mt: 0, 
+          fontSize: { xs: "0.5", md: "0.8rem" } 
+        }}>
+          {label}
+        </Typography>
     </Box>
   );
 }
