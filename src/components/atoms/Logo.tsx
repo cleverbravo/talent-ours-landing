@@ -10,18 +10,25 @@ interface LogoProps {
 
 export default function Logo({ size = "small", variant = "white-orange" }: LogoProps) {
   const iconSize = size === "small" ? 128 : 192;
-  console.log(iconSize);
   const src = variant === "blue" ? "/icons/logo-blue.svg" : "/icons/to-logo-white-orange.svg";
 
   return (
-    <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+    <Box
+      sx={{
+        display: "flex",
+        alignItems: "center",
+        gap: 1,
+        width: "100%",
+        maxWidth: iconSize,
+      }}
+    >
       <Box
         sx={{
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          width: iconSize,
-          height: "60%",
+          width: "100%",
+          height: "auto",
         }}
       >
         <Image
@@ -29,7 +36,7 @@ export default function Logo({ size = "small", variant = "white-orange" }: LogoP
           alt="Talent Ours Logo"
           width={iconSize}
           height={iconSize}
-          style={{ width: "100%", height: "60%" }}
+          style={{ width: "100%", height: "auto" }}
         />
       </Box>
     </Box>
