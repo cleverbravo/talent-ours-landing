@@ -18,8 +18,12 @@ export default function Logo({ size = "small", variant = "white-orange" }: LogoP
         display: "flex",
         alignItems: "center",
         gap: 1,
-        width: "100%",
-        maxWidth: iconSize,
+        width: iconSize,
+        maxWidth: "100%",
+        flexShrink: 0,
+        flexGrow: 0,
+        minWidth: 0,
+        pointerEvents: "auto",
       }}
     >
       <Box
@@ -36,7 +40,7 @@ export default function Logo({ size = "small", variant = "white-orange" }: LogoP
           alt="Talent Ours Logo"
           width={iconSize}
           height={iconSize}
-          style={{ width: "100%", height: "auto" }}
+          style={{ width: "100%", height: "auto", display: "block" }}
         />
       </Box>
     </Box>
